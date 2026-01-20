@@ -16,7 +16,7 @@ body {
 /* ===== HEADER (RESUME STYLE) ===== */
 .resume-header {
   background-color: #b8a9e6; /* lavender */
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 2.5rem 1rem;
 }
@@ -36,7 +36,7 @@ body {
 }
 
 .contact-info span {
-  margin: 0 6px;
+  margin: 0 8px;
 }
 
 .contact-info a {
@@ -85,28 +85,25 @@ h3 {
 .profile p {
   max-width: 720px;
   margin: auto;
+  text-align: justify;
 }
 
-/* ===== LISTS ===== */
-ul {
-  list-style: none;
+/* ===== SKILLS ===== */
+.skills-group {
+  margin-bottom: 1rem;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* ===== TECHNICAL SKILLS (HORIZONTAL, PLAIN TEXT) ===== */
-.tech-skills {
-  list-style: none;
+.tech-skills,
+.non-tech-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  list-style: none;
   padding: 0;
-  margin-top: 0.5rem;
 }
 
-.tech-skills li {
+.tech-skills li,
+.non-tech-skills li {
   font-size: 1rem;
   color: #333;
 }
@@ -128,18 +125,13 @@ ul li {
   text-decoration: underline;
 }
 
-/* ===== LINKS ===== */
-a {
-  color: #6b4fbf;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+/* ===== INTERNSHIP ===== */
+.internship {
+  margin-top: 1rem;
 }
 
 /* ===== DECLARATION ===== */
-section p {
+.declaration p {
   text-align: justify;
 }
 
