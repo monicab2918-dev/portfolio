@@ -13,9 +13,20 @@ body {
   line-height: 1.6;
 }
 
+/* ===== GLOBAL LINKS (SAME EVERYWHERE) ===== */
+a {
+  color: #6b4fbf;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* ===== HEADER (RESUME STYLE) ===== */
 .resume-header {
-  background-color: #b8a9e6; /* lavender */
+  background-color: #b8a9e6;
   color: #ffffff;
   text-align: center;
   padding: 2.5rem 1rem;
@@ -41,12 +52,6 @@ body {
 
 .contact-info a {
   color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
 }
 
 /* ===== SECTION COMMON ===== */
@@ -59,6 +64,7 @@ section {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
+/* Headings */
 h2 {
   color: #6b4fbf;
   margin-bottom: 1rem;
@@ -67,6 +73,16 @@ h2 {
 h3 {
   color: #4f3aa6;
   margin: 1rem 0 0.5rem;
+}
+
+/* ===== REMOVE BULLETS (EDUCATION, AREA, NON-TECH) ===== */
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section ul li {
+  margin-bottom: 0.4rem;
 }
 
 /* ===== PROFILE ===== */
@@ -89,40 +105,35 @@ h3 {
 }
 
 /* ===== SKILLS ===== */
-.skills-group {
-  margin-bottom: 1rem;
-}
 
-.tech-skills,
-.non-tech-skills {
+/* Technical skills – horizontal, plain text */
+.tech-skills {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
   padding: 0;
+  margin-bottom: 1rem;
 }
 
-.tech-skills li,
-.non-tech-skills li {
+.tech-skills li {
   font-size: 1rem;
   color: #333;
+}
+
+/* Non-technical skills – simple vertical text */
+.non-tech-skills {
+  list-style: none;
+  padding-left: 0;
+}
+
+.non-tech-skills li {
+  margin-bottom: 0.4rem;
 }
 
 /* ===== PROJECTS ===== */
 .project {
   margin-top: 1rem;
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #6b4fbf;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.project a:hover {
-  text-decoration: underline;
 }
 
 /* ===== INTERNSHIP ===== */
